@@ -1,0 +1,18 @@
+distillation_type: vanilla
+# data
+data_name: CIFAR100
+data_path: ./datasets
+num_classes: 100
+# model
+
+model_name: wideresnet
+model_depth: 40
+model_widen: 2
+model_checkpoint: null
+evaluation: False
+# base training settings
+start_epoch: 1
+epochs: 200
+batch_size: 128
+lr: 0.1
+milestones: [100, 150]

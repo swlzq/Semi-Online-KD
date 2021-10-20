@@ -1,0 +1,33 @@
+distillation_type: sokd
+distillation_name: soft_target
+# data
+data_name: CIFAR100
+data_path: ./datasets
+num_classes: 100
+# teacher
+teacher_name: wideresnet
+teacher_depth: 40
+teacher_widen: 2
+teacher_checkpoint: ./results/models/wrn40_2.pth.tar
+
+# student
+model_name: wideresnet
+model_depth: 40
+model_widen: 1
+# model_checkpoint: ./results/models/wrn40_1.pth.tar
+# evaluation: True
+model_checkpoint: null
+evaluation: False
+# base training settings
+start_epoch: 1
+epochs: 200
+batch_size: 128
+lr: 0.1
+lr_auxiliary: 0.1
+milestones: [100, 150]
+# coefficient
+lambda_kd: 1
+lambda_ce: 1
+auxiliary_lambda_kd_t: 1
+auxiliary_lambda_kd_s: 1
+auxiliary_lambda_ce: 1
