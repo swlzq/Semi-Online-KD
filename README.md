@@ -1,6 +1,6 @@
 # Semi-Online Knowledge Distillation
 
-Implementations of SOKD.
+Implementations of [Semi-Online Knowledge Distillation](https://arxiv.org/abs/2111.11747).
 
 
 
@@ -27,6 +27,6 @@ This repo was tested with Python 3.8, PyTorch 1.5.1, torchvision 0.6.1, CUDA 10.
 
 Compared methods can be found at the following repos:
 
-[Knowledge-Distillation-Zoo](https://github.com/AberHu/Knowledge-Distillation-Zoo)
+- [Knowledge-Distillation-Zoo](https://github.com/AberHu/Knowledge-Distillation-Zoo)
 
-[RepDistiller](https://github.com/HobbitLong/RepDistiller)
+- [RepDistiller](https://github.com/HobbitLong/RepDistiller)
